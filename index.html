@@ -17,6 +17,8 @@
     --accent-ink: #ffffff;
     --leaf: #5a8a5a;
     --ocean: #3f7f9e;
+    --violet: #7b5be0;
+    --plum: #b0558f;
     --shadow: 0 6px 20px rgba(60, 45, 20, 0.08);
     --radius: 16px;
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -34,6 +36,8 @@
       --accent-ink: #1b1712;
       --leaf: #7bab7b;
       --ocean: #6badd1;
+      --violet: #8f74e8;
+      --plum: #c2709f;
       --shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
     }
   }
@@ -48,6 +52,8 @@
     --accent-ink: #1b1712;
     --leaf: #7bab7b;
     --ocean: #6badd1;
+    --violet: #8f74e8;
+    --plum: #c2709f;
     --shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
   }
 
@@ -149,6 +155,10 @@
     justify-content: center;
     padding: 2rem;
     min-height: 220px;
+  }
+
+  .project-visual.idea-hub {
+    background: linear-gradient(155deg, var(--violet) 0%, var(--plum) 100%);
   }
 
   .project-visual .emoji {
@@ -254,6 +264,32 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects">
       <article class="project-card">
+        <div class="project-visual idea-hub"><span class="emoji">💡</span></div>
+        <div class="project-body">
+          <h3 class="project-title">Idea Hub</h3>
+          <p class="project-desc">
+            A mobile-first productivity app designed for ADHD brains. “Little steps. Big dreams.”
+            Capture ideas, break them into small steps, and pick what to do today. A Time Timer–style
+            dial answers “I have 20 minutes, what can I do?” and runs a focus timer whose task list
+            shrinks as time runs down. Repeat tasks schedule themselves by weekday, and suggestions
+            can match the room you’re in. No streaks, no overdue warnings, no guilt. Installs on
+            Android and works offline.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Vue 3</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Pinia</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">PWA</span>
+            <span class="tag">Vitest</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://idea-hub.jinxedlabs.com" target="_blank" rel="noopener">Live App ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reverse">
         <div class="project-visual"><span class="emoji">🏝️</span></div>
         <div class="project-body">
           <h3 class="project-title">Coral Island Tracker</h3>
